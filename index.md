@@ -189,4 +189,32 @@ Rebase — один из двух способов объединить изме
 
 При этом коммиты, созданные в процессе rebase-а, будут содержать данные как об оригинальном авторе и дате изменений (Author), так и о пользователе, сделавшем rebase.
 
-### С небес на землю — rebase в реальных условиях
+## Работа с GitHub
+
+Для начала работы необходимо зарегистрировать на
+```
+    https://github.com/
+```
+К примеру создадим репозиторий "geek-git-tutorial"
+
+Проделайте следующие операции у себя на компьютере(инструкция взята с github.com):
+
+    * или создайте новый репозиторий в командной строке 
+
+    ```
+        echo "# geek-git-tutorial" >> README.md
+        git init
+        git add README.md
+        git commit -m "first commit"
+        git branch -M main
+        git remote add origin https://github.com/zversko/geek-git-tutorial.git
+        git push -u origin main
+    ```
+
+    * или поместите существующий репозиторий из командной строки
+
+    ```
+        git remote add origin https://github.com/zversko/geek-git-tutorial.git
+        git branch -M main
+        git push -u origin main
+    ```
